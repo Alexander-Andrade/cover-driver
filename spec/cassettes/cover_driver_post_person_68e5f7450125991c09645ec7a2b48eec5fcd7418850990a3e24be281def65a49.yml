@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://cover-driver-information-mock.herokuapp.com/reports
+    body:
+      encoding: UTF-8
+      string: '{"data":{"attributes":{"first_name":"Alex","last_name":"Djus","drivers_license_number":"123456"}}}'
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer a9f05b05ce6d
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 06 Nov 2021 12:51:57 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"c010993cfe818e2f0c069d66c8bd619a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 882006f8-7128-4615-8579-26cce1f37e89
+      X-Runtime:
+      - '0.002419'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"f612eb32e26ca101f3ff206446ec00fb","type":"DriverInformation","attributes":{"first_name":"Alex","last_name":"Djus","drivers_license_number":"123456","number_of_incidents":"6","number_of_vehicles":"5"}}}'
+  recorded_at: Sat, 06 Nov 2021 12:51:58 GMT
+recorded_with: VCR 6.0.0
